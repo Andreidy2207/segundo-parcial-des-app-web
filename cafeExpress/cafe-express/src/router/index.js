@@ -2,14 +2,14 @@
 // createWebHistory: usa el historial del navegador (URLs limpias sin #)
 import { createRouter, createWebHistory } from 'vue-router'
 
-import LoginView     from '../views/LoginView.vue'   
-import DashboardView from '../views/DashboardView.vue' 
-import ProductView   from '../views/ProductView.vue'   
+import LoginView from '../views/LoginView.vue'
+import DashboardView from '../views/DashboardView.vue'
+import ProductView from '../views/ProductView.vue'
 
 
 // Cada objeto representa una ruta de la aplicación
 const routes = [
-
+  
   // Ruta raíz: redirige automáticamente al login así el usuario nunca queda en una ruta vacía
   {
     path: '/',
