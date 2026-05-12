@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cappuccino Italiano",
+    "descripcion": "Espresso con leche vaporizada y espuma sedosa.",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVFZSRIYYcQTJbf7AQhBNGmVCyXxnshGs2Ow&s",
+    "precio": "4500",
+    "estrellas": "🌟🌟",
+    "categoria": "bebida"
+  },
+  {
+    "id": 2,
+    "nombre": "Latte de Vainilla",
+    "descripcion": "Suave café con un toque dulce de vainilla francesa.",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPSg50JRcRnf1Tt1_NkI3wNwwYX0rBgoePgw&s",
+    "precio": "5000",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "bebida"
+  },
+  {
+    "id": 3,
+    "nombre": "Mocaccino Especial",
+    "descripcion": "La mezcla perfecta de chocolate oscuro y café.",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg65fQoJRqdo12BjOY-pm9mWPxyCrkQRIVBA&s",
+    "precio": "5500",
+    "estrellas": "🌟🌟🌟🌟",
+    "categoria": "bebida"
+  },
+  {
+    "id": 4,
+    "nombre": "Matcha de Leche",
+    "descripcion": "Té verde matcha premium con leche de almendras.",
+    "imagen": "https://www.modernfarmhouseeats.com/wp-content/uploads/2022/02/starbucks-iced-matcha-latte-8.jpg",
+    "precio": "6000",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "bebida"
+  },
+  {
+    "id": 5,
+    "nombre": "Cold Brew Nitro",
+    "descripcion": "Café extraído en frío por 18 horas con nitrógeno.",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCc1lkqw8L41bJEP7uepy2jZlq306BFj9ZPw&s",
+    "precio": "6500",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "bebida"
+  },
+  {
+    "id": 6,
+    "nombre": "Flate White",
+    "descripcion": "bebida de café a base de espresso y leche vaporizada con una fina capa de microespuma",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdXjJ-Jf9jm4Ti-J-VLBLn2SwCrEvVh2INg&s",
+    "precio": "7000",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "bebida"
+  },
+  {
+    "id": 7,
+    "nombre": "Muffin de Arándanos",
+    "descripcion": "Esponjoso panecillo con arándanos frescos.",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjldGit1nrAhNn8ajjYYU-D-FgZNDmTtaDw&s",
+    "precio": "7500",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "alimento"
+  },
+  {
+    "id": 8,
+    "nombre": "Cheesecake de Frutos Rojos",
+    "descripcion": "Base de galleta crujiente con crema suave de queso.",
+    "imagen": "https://www.infobae.com/resizer/v2/CTNAXVUCDVHFHD46FKY3NZ5Y4E.jpg?auth=68d26a8d1026659bc57249ce98afd4e495cfc8900ec0e0e089b0256f3be50158",
+    "precio": "8000",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "alimento"
+  },
+  {
+    "id": 9,
+    "nombre": "Affogato Premium",
+    "descripcion": "Helado de vainilla bañado en un shot de espresso caliente.",
+    "imagen": "https://www.shutterstock.com/image-photo/italian-affogato-dessert-coffee-vanilla-600nw-2705752667.jpg",
+    "precio": "8500",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "alimento"
+  },
+  {
+    "id": 10,
+    "nombre": "Tostada de Aguacate",
+    "descripcion": "Pan de masa madre con aguacate, huevo poché y semillas.",
+    "imagen": "https://veggiefestchicago.org/wp-content/uploads/2018/12/BreadAvocato2.jpg",
+    "precio": "9000",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "alimento"
+  },
+  {
+    "id": 11,
+    "nombre": "Croisant de jamon y queso",
+    "descripcion": "Croissant elaborado con margarina vegetal y harina de trigo, relleno de jamón y queso fresco",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyyzoIQSjPsvx90te_8IrxdVV_YbyC5N3EOQ&s",
+    "precio": "9500",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "alimento"
+  },
+  {
+    "id": 12,
+    "nombre": "Waffles con frutas y miel",
+    "descripcion": "Masa crujiente por fuera y suave por dentroen forma de rejilla, cubierta con frutas frescas (fresas, plátano, kiwi) y un toque dulce de miel",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr3pZTdhnEQvRw3mA43BMwvXtxarzqEIcdw&s",
+    "precio": "10000",
+    "estrellas": "🌟🌟🌟",
+    "categoria": "alimento"
+  }
+]
