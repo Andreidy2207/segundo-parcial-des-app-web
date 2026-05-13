@@ -25,24 +25,17 @@
               <i class="bi bi-cup-hot me-1"></i> Productos
             </router-link>
           </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              Gestión
-            </a>
-            <ul class="dropdown-menu shadow">
-              <li><router-link class="dropdown-item" to="/dashboard/productos">Inventario</router-link></li>
-              <li><router-link class="dropdown-item" to="/dashboard/clientes">Clientes</router-link></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger fw-bold" href="#" @click.prevent="handleLogout">Cerrar Sesión</a></li>
-            </ul>
-          </li>
         </ul>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar producto...">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+        <div class="d-flex align-items-center gap-2">
+          <form class="d-flex" role="search">
+          </form>
+          <!-- BOTÓN CERRAR SESIÓN -->
+          <button class="btn btn-outline-danger d-flex align-items-center gap-1" @click="handleLogout">
+            <i class="bi bi-box-arrow-right"></i>
+            <span class="d-none d-lg-inline">Cerrar sesión</span>
+          </button>
+        </div>
       </div>
     </div>
   </nav>
@@ -54,7 +47,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const handleLogout = () => {
-  localStorage.removeItem('usuario'); // Limpia la sesión
+  localStorage.removeItem('usuario');
   router.push('/login');
 };
 </script>

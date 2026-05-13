@@ -21,6 +21,7 @@
                 <hr class="mx-4" style="color: #6F4E37; opacity: 0.2;">
               </div>
 
+              <!-- Alerta de error visual -->
               <div v-if="error" class="alert alert-danger py-2 mb-3 border-0 shadow-sm" style="font-size: 0.85rem;">
                 Usuario o clave incorrectos
               </div>
@@ -61,27 +62,42 @@ const error = ref(false)
 const form = ref({ username: '', password: '' })
 
 const handleLogin = () => {
-  const userFound = usuariosData.find(u => u.user === form.value.username && u.pass === form.value.password)
+  // --- BLOQUE DE DIAGNÓSTICO ---
+  console.log("Intentando ingresar con:", form.value.username);
+  console.log("Usuarios en base de datos (JSON):", usuariosData);
+  
+  // Buscamos coincidencia
+  const userFound = usuariosData.find(u => 
+    u.user === form.value.username && 
+    u.pass === form.value.password
+  )
+
   if (userFound) {
-    error.value = false
-    // localStorage.setItem('usuario', JSON.stringify(userFound))
-    router.push('/dashboard')
+    console.log("✅ ÉXITO: Usuario encontrado", userFound);
+    
+    // Guardamos en localStorage para que el router.beforeEach (index.js) nos deje pasar
+    localStorage.setItem('usuario', JSON.stringify(userFound));
+    
+    error.value = false;
+    
+    // Redirigimos
+    router.push('/dashboard');
   } else {
-    error.value = true
-    form.value.password = ''
+    console.log("❌ ERROR: Credenciales no coinciden");
+    error.value = true;
+    form.value.password = ''; // Limpiamos clave por seguridad
   }
 }
 </script>
 
 <style scoped>
-/* Marco interno de la tarjeta */
+/* Tu diseño original se mantiene intacto */
 .card-custom-border {
   position: relative;
-  border: 8px double #D2B48C !important; /* Borde doble estilo clásico */
+  border: 8px double #D2B48C !important;
   padding: 5px;
 }
 
-/* Estilo para los adornos de las esquinas */
 .corner-decoration {
   position: absolute;
   width: 40px;
@@ -96,7 +112,6 @@ const handleLogin = () => {
 .bottom-left { bottom: 15px; left: 15px; border-right: none; border-top: none; border-radius: 0 0 0 10px; }
 .bottom-right { bottom: 15px; right: 15px; border-left: none; border-top: none; border-radius: 0 0 10px 0; }
 
-/* Botón con efecto */
 .btn-cafe {
   background-color: #6F4E37;
   border: none;
