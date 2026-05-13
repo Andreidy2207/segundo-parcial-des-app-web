@@ -17,7 +17,7 @@
               <div class="mb-4">
                 <span style="font-size: 3.5rem;">☕</span>
                 <h2 class="fw-bold mt-2" style="color: #4b3621;">Café Express</h2>
-                <p class="fst-italic small" style="color: #8D6E63;">"Una taza de energía y un aroma de éxito"</p>
+                <p class="fst-italic small" style="color: #8D6E63;">"Una taza de energía y un aroma de éxito. Despierta tu vida con cada sorbo."</p>
                 <hr class="mx-4" style="color: #6F4E37; opacity: 0.2;">
               </div>
 
